@@ -25,6 +25,7 @@
     "build": "node-gyp build",
     "install": "node-gyp rebuild",
     "concourse-test": "npm test",
+    "concourse-build-electron": "make webpack",
     "concourse-test-electron": "npm test",
     "concourse-test-node-cli": "make lint test-cli sanity-checks"
   },
@@ -33,7 +34,8 @@
   "platformSpecificDependencies": [
     "7zip-bin-mac",
     "7zip-bin-win",
-    "7zip-bin-linux"
+    "7zip-bin-linux",
+    "fsevents"
   ],
   "dependencies": {
     "angular": "1.6.3",
