@@ -1,10 +1,11 @@
-FROM resin/armv7hf-debian:jessie
+FROM resin/arm64-debian:jessie
 
 # Setup APT sources
 
 
 
 RUN echo "deb http://ftp.debian.org/debian jessie-backports main" >> /etc/apt/sources.list
+
 
 
 # Install dependencies
